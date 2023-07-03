@@ -10,7 +10,7 @@ shinyServer(function(input, output) {
         removeModal()
         
         ## users need connect privilege to data bank
-        rv$conPE <- catchDbCon(
+        rv$con <- catchDbCon(
             'DB', # name of data bank
             input$user, input$pin
         )
